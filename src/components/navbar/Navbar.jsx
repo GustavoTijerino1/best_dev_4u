@@ -48,7 +48,7 @@ export default function Navbar() {
           <nav
             className="
             animate__animated 
-            animate__fadeIn
+            animate__backInRight
             border-2 border-rose-500  
                                 absolute 
                                 right-0
