@@ -1,14 +1,17 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import { FaReact } from "react-icons/fa";
+import {
+  FaReact,
+  FaHome,
+  FaSuitcase,
+  FaFileAlt,
+  FaSmile,
+} from "react-icons/fa";
+import "animate.css";
 
 export default function Navbar() {
   const [menu, setMenu] = useState(false);
-
-  // const handleOpenNavMenu = () => {
-  //     setMenu(!true)
-  // }
 
   return (
     // <>
@@ -29,8 +32,6 @@ export default function Navbar() {
       </div>
 
       <div className="flex justify-center ">
-        {/*                 
-                <img class="h-10 w-10 rounded-full hidden md:block" src="{person.imageUrl}" alt="" /> */}
         <a href="/">
           <h1 className="text-3xl  font-mono text-center  delay-75  md:hidden">
             G.T
@@ -46,6 +47,9 @@ export default function Navbar() {
         {menu ? (
           <nav
             className="
+            animate__animated 
+            animate__fadeIn
+            border-2 border-rose-500  
                                 absolute 
                                 right-0
                                 mt-2
@@ -64,7 +68,7 @@ export default function Navbar() {
               className="block 
                                     px-4 py-2 text-gray-800 hover:bg-blue-500"
             >
-              Bio
+              About Me
             </Link>
             <Link
               to="/"
@@ -85,24 +89,42 @@ export default function Navbar() {
         ) : null}
       </div>
 
-      <nav className="space-x-10 p-1 mr-5  hidden md:block">
-        <Link to="/" className=" hover:underline">
-          Homepage
-        </Link>
-        <Link to="/" className=" hover:underline">
-          Bio
-        </Link>
-        <Link to="/" className=" hover:underline">
-          Projects
-        </Link>
-        <a
-          className="hover:underline"
-          rel="noreferrer"
-          href="  https://docs.google.com/document/d/1tLv9REAxBM-w8b7GNel2XYWGM7Pbz-Z2jMlXjFFQlys/export?format=pdf"
-          download
-        >
-          Resume
-        </a>
+      <nav className="  hidden md:block">
+        <ul className="flex space-x-10 p-1 mr-5">
+          <li className="flex items-center border-2 border-rose-500  space-x-2 ">
+            <FaHome className="" />
+            <Link to="/" className=" hover:underline">
+              Homepage
+            </Link>
+          </li>
+          <li
+            className="flex items-center 
+          border-2 border-rose-500  space-x-2 "
+          >
+            <FaSmile className="" />
+            <Link to="/" className=" hover:underline">
+              About Me
+            </Link>
+          </li>
+          <li className="flex items-center border-2 border-rose-500  space-x-2 ">
+            <FaSuitcase className="" />
+            <Link to="/" className=" hover:underline">
+              Projects
+            </Link>
+          </li>
+
+          <li className="flex items-center border-2 border-rose-500  space-x-2 ">
+            <FaFileAlt className="" />
+            <a
+              className="hover:underline"
+              rel="noreferrer"
+              href="  https://docs.google.com/document/d/1tLv9REAxBM-w8b7GNel2XYWGM7Pbz-Z2jMlXjFFQlys/export?format=pdf"
+              download
+            >
+              Resume
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
     // </>

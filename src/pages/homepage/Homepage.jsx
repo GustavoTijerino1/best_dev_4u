@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../../components/navbar/Navbar";
 import { FaGithub, FaLinkedin, FaEnvelopeSquare } from "react-icons/fa";
-
+import Typewriter from "typewriter-effect";
 export default function Homepage() {
   return (
     <>
@@ -65,15 +65,22 @@ export default function Homepage() {
         <div
           className="border-2 border-rose-500
          bg-gradient-to-r from-purple-500 to-pink-500 
-        rounded w-fit mt-18 p-8 text-center text-sm"
+        rounded w-fit mt-20 p-8 text-center text-lg uppercase md:text-3xl"
         >
-          <h3>Welcome!!</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            tempore, eos adipisci, neque, quibusdam nisi fugiat ratione
-            praesentium provident autem illum est! Totam sequi repellat a
-            sapiente expedita reiciendis modi?
-          </p>
+          <h2>Hello World,</h2>
+          <p>My name Gustavo Tijerino and I love to code!!!</p>
+
+          <Typewriter
+            options={{
+              strings: [
+                "Hello and Welcome! Lorem, ipsum dolor sit amet consectetur adipisicing elit ",
+              ],
+
+              autoStart: true,
+              loop: false,
+              deleteSpeed: 50,
+            }}
+          />
         </div>
       </div>
     </>
