@@ -15,8 +15,9 @@ export default function Navbar() {
 
   return (
     // <>
+    // fixed top-0 left-0 right-0 = movable navbar
     <header
-      className="bg-gradient-to-br from-pink-500 to-orange-400  fixed top-0 left-0 right-0
+      className="bg-gradient-to-br from-pink-500 to-orange-400  
     
         flex justify-between p-3 text-white
         sm:bg-white
@@ -64,14 +65,14 @@ export default function Navbar() {
               Home
             </Link>
             <Link
-              to="/"
+              to="/about"
               className="block 
                                     px-4 py-2 text-gray-800 hover:bg-blue-500"
             >
               About
             </Link>
             <Link
-              to="/"
+              to="/projects"
               className="block px-4 py-2 text-gray-800 hover:bg-blue-500"
             >
               Projects
@@ -102,13 +103,13 @@ export default function Navbar() {
           border-2 border-rose-500  space-x-2 "
           >
             <FaSmile className="" />
-            <Link to="/" className=" hover:underline">
+            <Link to="/about" className=" hover:underline">
               About
             </Link>
           </li>
           <li className="flex items-center border-2 border-rose-500  space-x-2 ">
             <FaSuitcase className="" />
-            <Link to="/" className=" hover:underline">
+            <Link to="/projects" className=" hover:underline">
               Projects
             </Link>
           </li>
