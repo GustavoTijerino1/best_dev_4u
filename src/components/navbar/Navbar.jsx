@@ -52,7 +52,7 @@ export default function Navbar() {
             border-2 border-rose-500  
                                 absolute 
                                 right-0
-                                mt-2
+                                mt-4
                                 bg-white 
                                 rounded-lg py-2 shadow-2xl"
           >
@@ -61,14 +61,14 @@ export default function Navbar() {
               className="block px-4 py-2 text-gray-800
                                     hover:bg-blue-500"
             >
-              Homepage
+              Home
             </Link>
             <Link
               to="/"
               className="block 
                                     px-4 py-2 text-gray-800 hover:bg-blue-500"
             >
-              About Me
+              About
             </Link>
             <Link
               to="/"
@@ -94,7 +94,7 @@ export default function Navbar() {
           <li className="flex items-center border-2 border-rose-500  space-x-2 ">
             <FaHome className="" />
             <Link to="/" className=" hover:underline">
-              Homepage
+              Home
             </Link>
           </li>
           <li
@@ -103,7 +103,7 @@ export default function Navbar() {
           >
             <FaSmile className="" />
             <Link to="/" className=" hover:underline">
-              About Me
+              About
             </Link>
           </li>
           <li className="flex items-center border-2 border-rose-500  space-x-2 ">
