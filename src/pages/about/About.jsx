@@ -5,7 +5,7 @@ export default function About() {
     <>
       <Navbar></Navbar>
 
-      <div className="border-2 border-red-500 flex justify-center mt-20 flex-col space-y-4 items-center">
+      <div className="border-2 border-red-500 flex justify-center mt-20 flex-col space-y-4 items-center p-4">
         <div className="w-fit border-2 border-blue-500 p-10 text-justify">
           <h1>ANIMATED PIC OF ME</h1>
         </div>
