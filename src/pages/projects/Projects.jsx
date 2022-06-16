@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../../components/navbar/Navbar";
-import Sidecontactbar from "../../components/sidecontactbar/Sidecontactbar";
+// import Sidecontactbar from "../../components/sidecontactbar/Sidecontactbar";
 import "animate.css";
 // import { ProjectsData } from "../../components/ProjectsData";
 import "../../index.css";

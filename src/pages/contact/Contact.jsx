@@ -1,6 +1,6 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
-import { Link } from "react-router-dom";
+// import React, { useRef } from "react";
+// import emailjs from "@emailjs/browser";
+// import { Link } from "react-router-dom";
 import Navbar from "../../components/navbar/Navbar";
 export default function Contact() {
   //     const form = useRef();
