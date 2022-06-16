@@ -32,11 +32,11 @@ nav:hover li {
     /* --animate-delay: 0.9s; */
   }
 
+  @layer{
+
   .icon {
-    width: 30px; 
-    height: 30px;
-    color: midnightblue;
+    @apply md:w-12 md:h-12  h-auto w-auto
   }
   .icon:hover {
     color: blue;
-  }
+  }}
