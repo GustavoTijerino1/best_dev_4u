@@ -9,7 +9,7 @@ export default function Resume() {
     <div>
       <Navbar />
       <Sidecontactbar />
-      <div className="fixed border-2 border-green-500 bottom-60 right-0 mr-10 ">
+      <div className="fixed border-2 border-green-500 bottom-60 right-0 mr-2 ">
         <h1>Lets Talk!</h1>
       </div>
       <div className="border-2 border-red-500 flex justify-center  flex-col space-y-2 items-center p-4">

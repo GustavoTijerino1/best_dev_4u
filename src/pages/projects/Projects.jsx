@@ -79,11 +79,7 @@ export default function Projects() {
       <Navbar />
       {/* <Sidecontactbar /> */}
 
-      <div className="border-2 border-red-500 flex justify-center flex-row space-x-4   mt-20 md:mt-10  items-center ">
-        <FaArrowAltCircleLeft
-          onClick={prevSlide}
-          className="w-40 h-40 md:w-20 md:h-20"
-        />
+      <div className="border-2 border-red-500 flex justify-center flex-row space-x-4 w-fit  h-fit md:h-auto mt-20  items-center p-2 ">
         {projectsData.map((slide, i) => {
           return (
             <div key={i} className={i === current ? "slide active" : "slide"}>
@@ -92,8 +88,8 @@ export default function Projects() {
                   className="
                 animate__animated 
                 animate__fadeIn
-                w-fit border-2 border-blue-500 p-10 
-                md:h-auto
+                w-fit border-2 border-blue-500 p-2 
+                items-center
                 flex flex-col space-y-2 "
                 >
                   <h1 className="text-center">{slide.title}</h1>
@@ -105,21 +101,17 @@ export default function Projects() {
                   max-w-full h-auto"
                   />
 
-                  <div className="border-2 border-red-500 flex flex-col     ">
+                  <div className="border-2 border-red-500 flex flex-col  items-center   ">
                     <p className="text-justify p-2 text-xs md:text-base border-b-2 border-b-grey-500">
                       {slide.info}
                     </p>
-                    <div className="flex flex-row justify-center space-x-10">
+                    <div className="flex flex-col  items-center ">
                       <div>
                         <h2 className="text-center">Technologies</h2>
-                        <div className="flex justify-start">{slide.tech}</div>
+                        <div className="flex ">{slide.tech}</div>
                       </div>
-                      {/* <ul className="mb-6">
-                      <li key={i} className="flex-row flex space-x-2">
-                      {slide.tech}
-                      </li>
-                    </ul> */}
-                      <div className="border-2 border-blue-500 flex-row flex space-x-10 p-4">
+
+                      <div className="border-2 border-blue-500 flex-row flex items-center p-4 space-x-6">
                         <a
                           href={slide.links}
                           target="_blank"
@@ -127,8 +119,8 @@ export default function Projects() {
                         >
                           <FaGithub
                             className="
-                          rounded-full
-                          h-8 w-8 mt-1  hover:animate-ping bg-white"
+      rounded-full
+      h-8 w-8 mt-1  hover:animate-ping bg-white"
                           />
                         </a>
                         <a
@@ -140,16 +132,24 @@ export default function Projects() {
                         </a>
                       </div>
                     </div>
+                    <div className="flex flex-row space-x-10">
+                      Previous
+                      <FaArrowAltCircleLeft
+                        onClick={prevSlide}
+                        className="w-10 h-10 md:w-20 md:h-20"
+                      />
+                      <FaArrowAltCircleRight
+                        onClick={nextSlide}
+                        className="w-10 h-10 md:w-10 md:h-10"
+                      />
+                      Next project
+                    </div>
                   </div>
                 </div>
               )}
             </div>
           );
         })}
-        <FaArrowAltCircleRight
-          onClick={nextSlide}
-          className="w-40 h-40 md:w-20 md:h-20"
-        />
       </div>
     </div>
   );

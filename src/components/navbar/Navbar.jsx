@@ -18,7 +18,8 @@ export default function Navbar() {
     // fixed top-0 left-0 right-0 = movable navbar
     <header
       className="bg-gradient-to-br from-pink-500 to-orange-400  
-    
+      sticky top-0 
+      z-50
         flex justify-between p-3 text-white
         sm:bg-white
         "
