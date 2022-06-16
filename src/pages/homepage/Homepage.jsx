@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "../../components/navbar/Navbar";
 import Sidecontactbar from "../../components/sidecontactbar/Sidecontactbar";
 import Typewriter from "typewriter-effect";
-import Marquee from "react-fast-marquee";
 
 export default function Homepage() {
   return (

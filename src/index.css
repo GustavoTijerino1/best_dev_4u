@@ -31,3 +31,12 @@ nav:hover li {
     /* --animate-duration: 800ms; */
     /* --animate-delay: 0.9s; */
   }
+
+  .icon {
+    width: 30px; 
+    height: 30px;
+    color: midnightblue;
+  }
+  .icon:hover {
+    color: blue;
+  }

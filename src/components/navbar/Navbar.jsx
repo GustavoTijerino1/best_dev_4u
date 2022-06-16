@@ -49,7 +49,7 @@ export default function Navbar() {
           <nav
             className="
             animate__animated 
-            animate__backInRight
+            animate__fadeIn
             border-2 border-rose-500  
                                 absolute 
                                 right-0
@@ -78,14 +78,12 @@ export default function Navbar() {
               Projects
             </Link>
 
-            <a
+            <Link
+              to="/resume"
               className="block px-4 py-2 text-gray-800 hover:bg-blue-500"
-              rel="noreferrer"
-              href="  https://docs.google.com/document/d/1tLv9REAxBM-w8b7GNel2XYWGM7Pbz-Z2jMlXjFFQlys/export?format=pdf"
-              download
             >
               Resume
-            </a>
+            </Link>
           </nav>
         ) : null}
       </div>
