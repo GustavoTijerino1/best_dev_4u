@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../../components/navbar/Navbar";
 import Sidecontactbar from "../../components/sidecontactbar/Sidecontactbar";
-import Typewriter from "typewriter-effect";
+// import Typewriter from "typewriter-effect";
 
 export default function Homepage() {
   return (
@@ -28,7 +28,7 @@ export default function Homepage() {
         >
           <h2>Hello World,</h2>
           <p>My name Gustavo and I love to code!!!</p>
-          <Typewriter
+          {/* <Typewriter
             options={{
               strings: ["Yo mama "],
 
@@ -36,7 +36,7 @@ export default function Homepage() {
               loop: true,
               // deleteSpeed: 50,
             }}
-          />
+          /> */}
         </div>
       </div>
     </>
