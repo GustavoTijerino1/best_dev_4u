@@ -3,8 +3,8 @@ import Navbar from "../../components/navbar/Navbar";
 import Sidecontactbar from "../../components/sidecontactbar/Sidecontactbar";
 
 export default function Resume() {
-  const resume1 = require("../../assets/img/resume1.0.png");
-  const resume2 = require("../../assets/img/resume2.0.png");
+  // const resume = require("../../assets/img/G.M.T.png");
+
   return (
     <div>
       <Navbar />
@@ -14,14 +14,31 @@ export default function Resume() {
       </div>
       <div className="border-2 border-red-500 flex justify-center  flex-col space-y-2 items-center p-4">
         <div className="w-fit border-2 border-blue-500 p-10 text-justify">
-          <h1>Button to Download</h1>
+          <a
+            className="hover:underline"
+            rel="noreferrer"
+            href="  https://docs.google.com/document/d/1tLv9REAxBM-w8b7GNel2XYWGM7Pbz-Z2jMlXjFFQlys/export?format=pdf"
+            download
+          >
+            <button>Download Resume</button>
+          </a>
         </div>
         <div className=" border-2 border-blue-500 p-10 text-justify">
-          <img src={resume1} className="w-fit" alt="" />
-          <img src={resume2} className="w-fit" alt="" />
+          <img
+            src="https://cdn.discordapp.com/attachments/948081994720505896/987210735824298014/unknown.png"
+            className="w-fit"
+            alt=""
+          />
         </div>
         <div className="w-fit border-2 border-blue-500 p-10 text-justify">
-          <h1>Button to Download</h1>
+          <a
+            className="hover:underline"
+            rel="noreferrer"
+            href="  https://docs.google.com/document/d/1tLv9REAxBM-w8b7GNel2XYWGM7Pbz-Z2jMlXjFFQlys/export?format=pdf"
+            download
+          >
+            <button>Download Resume</button>
+          </a>
         </div>
       </div>
     </div>

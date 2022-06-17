@@ -118,14 +118,6 @@ export default function Navbar() {
             <Link to="/resume" className=" hover:underline">
               Resume
             </Link>
-            {/* <a
-              className="hover:underline"
-              rel="noreferrer"
-              href="  https://docs.google.com/document/d/1tLv9REAxBM-w8b7GNel2XYWGM7Pbz-Z2jMlXjFFQlys/export?format=pdf"
-              download
-            >
-              Resume
-            </a> */}
           </li>
         </ul>
       </nav>

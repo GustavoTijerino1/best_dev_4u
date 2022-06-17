@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelopeSquare } from "react-icons/fa";
+import { Link } from "react-router-dom";
 export default function Sidecontactbar() {
   return (
     <aside
@@ -47,7 +48,7 @@ export default function Sidecontactbar() {
           </a>
         </li>
         <li>
-          <a href="/contact" rel="noopener noreferrer">
+          <Link to="/contact">
             <FaEnvelopeSquare
               className="
             bg-white
@@ -55,7 +56,7 @@ export default function Sidecontactbar() {
             h-8 w-8 mt-1
             hover:motion-safe:animate-bounce"
             />
-          </a>
+          </Link>
         </li>
       </ul>
     </aside>
