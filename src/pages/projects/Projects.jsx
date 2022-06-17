@@ -73,7 +73,6 @@ export default function Projects() {
             className="icon
           hover:text-violet-500 hover:bg-white"
           />
-          <FaDatabase className="icon" />
         </div>
       ),
       site: "https://techitout-deploy.herokuapp.com/",

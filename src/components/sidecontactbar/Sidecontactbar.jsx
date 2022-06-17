@@ -26,7 +26,7 @@ export default function Sidecontactbar() {
             <FaGithub
               className="
             rounded-full
-            h-8 w-8 mt-1  hover:animate-ping bg-white"
+            h-8 w-8 mt-1  hover:animate-pulse bg-white"
             />
           </a>
         </li>
