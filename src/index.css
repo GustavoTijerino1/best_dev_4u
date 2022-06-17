@@ -35,7 +35,7 @@ nav:hover li {
   @layer{
 
   .icon {
-    @apply md:w-12 md:h-12  h-auto w-auto
+    @apply md:w-12 md:h-12  h-6 w-6
   }
   .icon:hover {
     color: blue;

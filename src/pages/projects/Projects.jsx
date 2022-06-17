@@ -30,12 +30,21 @@ export default function Projects() {
       links: "https://github.com/Nerds-Meet-Nerds/Nerds-Meet-Nerds",
       tech: (
         <div className="flex-row flex space-x-10 mt-2">
-          <FaJs className="icon" />
-          <FaHtml5 className="icon" />
-          <FaCss3Alt className="icon" />
-          <FaNode className="icon" />
-          <FaBootstrap className="icon" />
-          <SiMysql className="icon" />
+          <FaJs className="icon hover:text-yellow-300 hover:bg-black " />
+          <FaHtml5 className="icon hover:text-blue-600 hover:bg-white" />
+          <FaCss3Alt className="icon hover:text-blue-600 hover:bg-white" />
+          <FaNode
+            className="icon
+          hover:text-green-500 hover:bg-black"
+          />
+          <FaBootstrap
+            className="icon
+           hover:text-violet-500 hover:bg-white"
+          />
+          <SiMysql
+            className="icon
+          hover:text-blue-600 hover:bg-white"
+          />
         </div>
       ),
       site: "https://nerds-meet-nerds.herokuapp.com/",
@@ -100,7 +109,7 @@ export default function Projects() {
       <Navbar />
       {/* <Sidecontactbar /> */}
 
-      <div className="border-2 border-red-500 flex  flex-row  w-fit  h-fit md:h-auto mt-20   p-2 ">
+      <div className="border-2 border-red-500 flex    w-fit  h-fit mt-20  justify-center p-2 ">
         {projectsData.map((slide, i) => {
           return (
             <div key={i} className={i === current ? "slide active" : "slide"}>
@@ -110,7 +119,8 @@ export default function Projects() {
                 animate__animated 
                 animate__fadeIn
                 w-fit border-2 border-blue-500 p-2 
-                items-center
+             
+                
                 flex flex-col space-y-2 "
                 >
                   <h1 className="text-center md:text-3xl text-xl underline">

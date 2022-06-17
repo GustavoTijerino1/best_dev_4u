@@ -6,6 +6,7 @@ export default function Sidecontactbar() {
       className="fixed inset-x-0 bottom-0  
       border-2 border-blue-500 md:w-fit
     md:right-0 md:inset-y-0 md:left-0 
+    mt-10
    "
     >
       <ul
