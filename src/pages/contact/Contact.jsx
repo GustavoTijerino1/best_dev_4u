@@ -2,6 +2,8 @@
 // import emailjs from "@emailjs/browser";
 // import { Link } from "react-router-dom";
 import Navbar from "../../components/navbar/Navbar";
+import { GiRocketFlight } from "react-icons/gi";
+
 export default function Contact() {
   //     const form = useRef();
 
@@ -35,7 +37,7 @@ export default function Contact() {
   //       }
   //     );
   return (
-    <>
+    <div className="contact-bg">
       <Navbar></Navbar>
       <div
         className="flex justify-center p-20 
@@ -56,8 +58,11 @@ export default function Contact() {
             <div className="">
               <h1>Email me!!</h1>
               <p className="">
-                Let us work together and build out of this world projects :D
+                Let us work together and build out of this world projects!!
               </p>
+              <span className="flex justify-end">
+                <GiRocketFlight className="h-8 w-8" />
+              </span>
             </div>
             <div className="">
               <input
@@ -108,6 +113,6 @@ export default function Contact() {
           </Link> */}
         </div>
       </div>
-    </>
+    </div>
   );
 }

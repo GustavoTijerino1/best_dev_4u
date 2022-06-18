@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 export default function Sidecontactbar() {
   return (
     <aside
-      className="fixed inset-x-0 bottom-0  
-      bg-black md:bg-inherit p-2 md:w-fit
+      className="fixed inset-x-0 bottom-0 
+      bg-purple-900 
+     md:bg-inherit p-2 md:w-fit
     md:right-0 md:inset-y-0 md:left-0 
     mt-10
    "

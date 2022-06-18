@@ -13,7 +13,7 @@ import { SiMongodb, SiMysql, SiTailwindcss } from "react-icons/si";
 
 export default function About() {
   return (
-    <>
+    <div className="boy">
       <Navbar></Navbar>
 
       <Sidecontactbar />
@@ -135,6 +135,6 @@ export default function About() {
           </a>
         </div>
       </div>
-    </>
+    </div>
   );
 }

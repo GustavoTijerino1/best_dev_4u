@@ -103,11 +103,10 @@ export default function Projects() {
   };
 
   return (
-    <div>
+    <div className="project-bg">
       <Navbar />
-      {/* <Sidecontactbar /> */}
 
-      <div className="border-2 border-red-500 flex    w-fit  h-fit mt-20  justify-center p-2 ">
+      <div className="  p-2  mt-16 ">
         {projectsData.map((slide, i) => {
           return (
             <div key={i} className={i === current ? "slide active" : "slide"}>
@@ -116,10 +115,9 @@ export default function Projects() {
                   className="
                 animate__animated 
                 animate__fadeIn
-                w-fit border-2 border-blue-500 p-2 
-             
-                
-                flex flex-col space-y-2 "
+                flex flex-col space-y-2
+                h-auto md:h-full 
+               "
                 >
                   <h1 className="text-center md:text-3xl text-xl underline">
                     {slide.title}
@@ -129,10 +127,10 @@ export default function Projects() {
                     alt=""
                     className="
   
-                  max-w-full h-auto"
+                     h-auto w-auto"
                   />
 
-                  <div className="border-2 border-red-500 flex flex-col  items-center   ">
+                  <div className=" flex flex-col  items-center   ">
                     <p className="text-justify p-2 text-xs md:text-base border-b-2 border-b-grey-500">
                       {slide.info}
                     </p>
@@ -145,6 +143,10 @@ export default function Projects() {
                       </div>
 
                       <div className="border-2 border-blue-500 flex-row flex items-center p-4 space-x-10">
+                        <FaArrowAltCircleLeft
+                          onClick={prevSlide}
+                          className="w-10 h-10 md:w-16 md:h-16 "
+                        />
                         <a
                           href={slide.links}
                           target="_blank"
@@ -163,19 +165,11 @@ export default function Projects() {
                         >
                           <button className="p-2 bg-blue-500">Live Demo</button>
                         </a>
+                        <FaArrowAltCircleRight
+                          onClick={nextSlide}
+                          className="w-10 h-10 md:w-16 md:h-16 "
+                        />
                       </div>
-                    </div>
-                    <div className="flex flex-row space-x-20">
-                      Previous
-                      <FaArrowAltCircleLeft
-                        onClick={prevSlide}
-                        className="w-10 h-10 md:w-16 md:h-16"
-                      />
-                      <FaArrowAltCircleRight
-                        onClick={nextSlide}
-                        className="w-10 h-10 md:w-16 md:h-16"
-                      />
-                      Next project
                     </div>
                   </div>
                 </div>

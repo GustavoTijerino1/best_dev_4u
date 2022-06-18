@@ -3,22 +3,8 @@
 @tailwind utilities;
 
 
-/* html {
-    width:100%;
-    height:100%;
-    background:top/cover no-repeat url("https://images.unsplash.com/photo-1462332420958-a05d1e002413?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1207&q=80");
-} */
-@layer{
 
-  body {
-    
-    background-image: url('https://images.unsplash.com/photo-1543722530-d2c3201371e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80' ) ;
-   @apply bg-cover bg-center h-screen
-  }
-}
-/* background-color: rgba(0, 0, 0, 0.784); */
-
-.h-tag::before {
+/* .h-tag::before {
  
 
 content: '<h1>';
@@ -30,15 +16,9 @@ content: '<h1>';
         top: -40px;
         left:0;
         opacity: 0.9;
-}
+} */
 
-nav:hover li {
-    opacity: .5;
-  }
-  
-  nav li:hover {
-    opacity: 1;
-  }
+
 
 
   @layer{
@@ -46,6 +26,41 @@ nav:hover li {
   .icon {
     @apply md:w-12 md:h-12  h-6 w-6
   }
-  .icon:hover {
-    color: blue;
-  }}
+  }
+
+
+  @layer{
+
+    .home-body {
+      
+      background-image: url('  https://images.unsplash.com/photo-1506443432602-ac2fcd6f54e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80' ) ;
+     @apply bg-cover bg-center h-screen md:h-full
+    }
+  }
+
+  @layer{
+
+    body {
+      
+      background-image: url('  https://images.unsplash.com/photo-1590388143860-6594f1fbc1f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80' ) ;
+     @apply bg-cover bg-center md:h-full bg-no-repeat h-screen
+    }
+  }
+
+  @layer{
+
+    .resume-bg {
+      
+      background-image: url('  https://images.unsplash.com/photo-1620820871314-4e0f0fd1eaf8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80' ) ;
+     @apply bg-cover bg-center h-auto  md:h-full 
+    }
+  }
+
+  @layer{
+
+    .contact-bg {
+      
+      background-image: url(' https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=611&q=80' ) ;
+     @apply bg-cover bg-center md:h-full  h-screen
+    }
+  }

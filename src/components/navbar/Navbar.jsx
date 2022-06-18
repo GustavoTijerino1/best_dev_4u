@@ -9,16 +9,17 @@ import {
   FaSmile,
 } from "react-icons/fa";
 import "animate.css";
+import "./navbar.css";
 
 export default function Navbar() {
   const [menu, setMenu] = useState(false);
 
   return (
     <header
-      className="bg-black 
+      className="bg-gradient-to-br from-purple-800 to-grey-500
       sticky top-0 
       z-50
-        flex justify-between p-3 text-white
+        flex justify-between p-2 text-white
         
         "
     >
