@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../../components/navbar/Navbar";
-// import Sidecontactbar from "../../components/sidecontactbar/Sidecontactbar";
+
 import "animate.css";
 // import { ProjectsData } from "../../components/ProjectsData";
 import "../../index.css";
@@ -14,7 +14,6 @@ import {
   FaCss3Alt,
   FaNode,
   FaBootstrap,
-  FaDatabase,
   FaSass,
 } from "react-icons/fa";
 import { SiMongodb, SiMysql } from "react-icons/si";
@@ -31,7 +30,7 @@ export default function Projects() {
       tech: (
         <div className="flex-row flex space-x-10 mt-2">
           <FaJs className="icon hover:text-yellow-300 hover:bg-black " />
-          <FaHtml5 className="icon hover:text-blue-600 hover:bg-white" />
+          <FaHtml5 className="icon hover:text-orange-600 hover:bg-white" />
           <FaCss3Alt className="icon hover:text-blue-600 hover:bg-white" />
           <FaNode
             className="icon

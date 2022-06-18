@@ -5,14 +5,14 @@ export default function Sidecontactbar() {
   return (
     <aside
       className="fixed inset-x-0 bottom-0  
-      border-2 border-blue-500 md:w-fit
+      bg-black md:bg-inherit p-2 md:w-fit
     md:right-0 md:inset-y-0 md:left-0 
     mt-10
    "
     >
       <ul
         className="md:space-y-14 md:h-screen flex 
-        border-2 border-blue-500
+       
         flex-row md:flex-col justify-center 
       md:space-x-0
       space-x-20  md:w-fit "

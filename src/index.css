@@ -8,9 +8,28 @@
     height:100%;
     background:top/cover no-repeat url("https://images.unsplash.com/photo-1462332420958-a05d1e002413?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1207&q=80");
 } */
+@layer{
 
-body {
-  background-color: aquamarine;
+  body {
+    
+    background-image: url('https://images.unsplash.com/photo-1543722530-d2c3201371e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80' ) ;
+   @apply bg-cover bg-center h-screen
+  }
+}
+/* background-color: rgba(0, 0, 0, 0.784); */
+
+.h-tag::before {
+ 
+
+content: '<h1>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #00ff7f;
+        font-size: 18px;
+        position: relative;
+        margin-top: -40px;
+        top: -40px;
+        left:0;
+        opacity: 0.9;
 }
 
 nav:hover li {
@@ -20,17 +39,7 @@ nav:hover li {
   nav li:hover {
     opacity: 1;
   }
-/* 
 
-  .animate__backInDown{
-    --animate-duration: 1s;
-  } */
-  
-  /* This changes all the animations globally */
-  :root {
-    /* --animate-duration: 800ms; */
-    /* --animate-delay: 0.9s; */
-  }
 
   @layer{
 

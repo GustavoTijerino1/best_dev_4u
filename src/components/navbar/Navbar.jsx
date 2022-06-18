@@ -14,14 +14,12 @@ export default function Navbar() {
   const [menu, setMenu] = useState(false);
 
   return (
-    // <>
-    // fixed top-0 left-0 right-0 = movable navbar
     <header
-      className="bg-gradient-to-br from-pink-500 to-orange-400  
+      className="bg-black 
       sticky top-0 
       z-50
         flex justify-between p-3 text-white
-        sm:bg-white
+        
         "
     >
       <div className="flex space-x-2 ">
@@ -38,7 +36,6 @@ export default function Navbar() {
           <h1 className="text-3xl  font-mono text-center  delay-75  md:hidden">
             ⌈G⌋ ⌊T⌉
           </h1>
-          {/* ⁛ ¦ */}
         </a>
       </div>
       <div className="md:hidden relative">
@@ -51,8 +48,8 @@ export default function Navbar() {
           <nav
             className="
             animate__animated 
-            animate__backInRight
-            border-2 border-rose-500  
+            animate__fadeIn
+             
                                 absolute 
                                 right-0
                                 mt-4
@@ -92,7 +89,7 @@ export default function Navbar() {
 
       <nav className="  hidden md:block">
         <ul className="flex space-x-10 p-1 mr-5">
-          <li className="flex items-center border-2 border-rose-500  space-x-2 ">
+          <li className="flex items-center   space-x-2 ">
             <FaHome className="" />
             <Link to="/" className=" hover:underline">
               Home
@@ -100,21 +97,21 @@ export default function Navbar() {
           </li>
           <li
             className="flex items-center 
-          border-2 border-rose-500  space-x-2 "
+            space-x-2 "
           >
             <FaSmile className="" />
             <Link to="/about" className=" hover:underline">
               About
             </Link>
           </li>
-          <li className="flex items-center border-2 border-rose-500  space-x-2 ">
+          <li className="flex items-center   space-x-2 ">
             <FaSuitcase className="" />
             <Link to="/projects" className=" hover:underline">
               Projects
             </Link>
           </li>
 
-          <li className="flex items-center border-2 border-rose-500  space-x-2 ">
+          <li className="flex items-center   space-x-2 ">
             <FaFileAlt className="" />
             <Link to="/resume" className=" hover:underline">
               Resume

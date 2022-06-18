@@ -38,18 +38,19 @@ export default function Contact() {
     <>
       <Navbar></Navbar>
       <div
-        className="flex justify-center mt-20 p-20 
+        className="flex justify-center p-20 
       
      border-2 border-rose-500"
       >
         <div
           className="flex 
         
-        md:justify-end border-2 border-rose-500 mt-10 p-20 w-fit justify-center"
+        md:justify-end border-2 border-rose-500
+        bg-stone-800 mt-10 p-20 w-fit justify-center"
         >
           <form
             className="flex-wrap 
-            space-y-2 flex-col"
+            space-y-2 flex-col text-white"
           >
             {/* {showAlert && ( */}
             <div className="">
