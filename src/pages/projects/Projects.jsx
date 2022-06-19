@@ -138,7 +138,7 @@ export default function Projects() {
                     alt="Project Screenshot"
                     className="
   
-                     h-auto w-auto"
+                     h-full w-full"
                   />
 
                   <div className=" flex flex-col  items-center   ">
@@ -156,7 +156,7 @@ export default function Projects() {
                       <div className=" flex-row flex items-center p-4 space-x-10">
                         <FaArrowAltCircleLeft
                           onClick={prevSlide}
-                          className="w-10 h-10 md:w-16 md:h-16 text-purple-400"
+                          className="w-10 h-10 md:w-16 md:h-16 text-purple-400 hover:text-purple-700 hover:bg-white rounded-full"
                         />
                         <a
                           href={slide.links}
@@ -175,11 +175,17 @@ export default function Projects() {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <button className="p-2 bg-blue-500">Live Demo</button>
+                          <button
+                            className="p-2 bg-blue-500 rounded hover:bg-blue-700 
+                          hover:border-2 hover:border-blue-200"
+                          >
+                            Live Demo
+                          </button>
                         </a>
+
                         <FaArrowAltCircleRight
                           onClick={nextSlide}
-                          className="w-10 h-10 md:w-16 md:h-16 text-purple-400 "
+                          className="w-10 h-10 md:w-16 md:h-16 text-purple-400 hover:text-purple-700 hover:bg-white rounded-full "
                         />
                       </div>
                     </div>
