@@ -16,7 +16,7 @@ import {
   FaBootstrap,
   FaSass,
 } from "react-icons/fa";
-import { SiMongodb, SiMysql } from "react-icons/si";
+import { SiMongodb, SiMysql, SiTailwindcss } from "react-icons/si";
 
 export default function Projects() {
   const [current, setCurrent] = useState(0);
@@ -29,20 +29,20 @@ export default function Projects() {
       links: "https://github.com/Nerds-Meet-Nerds/Nerds-Meet-Nerds",
       tech: (
         <div className="flex-row flex space-x-10 mt-2">
-          <FaJs className="icon hover:text-yellow-300 hover:bg-black " />
-          <FaHtml5 className="icon hover:text-orange-600 hover:bg-white" />
-          <FaCss3Alt className="icon hover:text-blue-600 hover:bg-white" />
+          <FaJs className="icon text-yellow-300 bg-black " />
+          <FaHtml5 className="icon text-orange-600 bg-white" />
+          <FaCss3Alt className="icon text-blue-600 bg-white" />
           <FaNode
             className="icon
-          hover:text-green-500 hover:bg-black"
+          text-green-500 bg-black"
           />
           <FaBootstrap
             className="icon
-           hover:text-violet-500 hover:bg-white"
+           text-violet-500 bg-white"
           />
           <SiMysql
             className="icon
-          hover:text-blue-600 hover:bg-white"
+          text-blue-600 bg-white"
           />
         </div>
       ),
@@ -55,22 +55,22 @@ export default function Projects() {
       links: " https://github.com/Emily-MVaz/tech-it-out",
       tech: (
         <div className="flex-row flex space-x-10 mt-2">
-          <FaReact className="icon hover:text-cyan-500 hover:bg-slate-900" />
+          <FaReact className="icon text-cyan-500 bg-slate-900" />
           <SiMongodb
             className="icon
-          hover:text-green-500 hover:bg-white"
+          text-green-500 bg-white"
           />
           <FaSass
             className="icon
-          hover:text-pink-500 hover:bg-white"
+          text-pink-500 bg-white"
           />
           <FaNode
             className="icon
-          hover:text-green-500 hover:bg-black"
+          text-green-500 bg-black"
           />
           <FaBootstrap
             className="icon
-          hover:text-violet-500 hover:bg-white"
+          text-violet-500 bg-white"
           />
         </div>
       ),
@@ -80,14 +80,24 @@ export default function Projects() {
       image:
         "https://images.unsplash.com/photo-1503387837-b154d5074bd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
       title: "My Portfolio",
-      info: "",
-      links: " https://github.com/Emily-MVaz/tech-it-out",
+      info: "This is my portfolio that shows my skills and projects that I made.",
+      links: " https://github.com/GustavoTijerino1/best_dev_4u",
+      tech: (
+        <div className="flex-row flex space-x-10 mt-2">
+          <FaReact className="icon text-cyan-500 bg-slate-900" />
+          <SiTailwindcss
+            className="icon
+              
+            text-blue-500 bg-white"
+          />
+        </div>
+      ),
     },
     {
       image:
         "https://images.unsplash.com/photo-1503387837-b154d5074bd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
       title: "Coming Soon",
-      info: "",
+      info: "New Project under the works.",
       links: " https://github.com/GustavoTijerino1",
     },
   ];
@@ -117,35 +127,36 @@ export default function Projects() {
                 animate__fadeIn
                 flex flex-col space-y-2
                 h-auto md:h-full 
+                text-white
                "
                 >
-                  <h1 className="text-center md:text-3xl text-xl underline">
+                  <h1 className="text-center md:text-3xl text-xl ">
                     {slide.title}
                   </h1>
                   <img
                     src={slide.image}
-                    alt=""
+                    alt="Project Screenshot"
                     className="
   
                      h-auto w-auto"
                   />
 
                   <div className=" flex flex-col  items-center   ">
-                    <p className="text-justify p-2 text-xs md:text-base border-b-2 border-b-grey-500">
+                    <p className="text-justify p-2 text-xs md:text-base bg-purple-400">
                       {slide.info}
                     </p>
                     <div className="flex flex-col  items-center ">
-                      <div>
+                      <div className="flex items-center flex-col">
                         <h2 className="text-center md:text-3xl text-xl underline">
                           Technologies
                         </h2>
                         {slide.tech}
                       </div>
 
-                      <div className="border-2 border-blue-500 flex-row flex items-center p-4 space-x-10">
+                      <div className=" flex-row flex items-center p-4 space-x-10">
                         <FaArrowAltCircleLeft
                           onClick={prevSlide}
-                          className="w-10 h-10 md:w-16 md:h-16 "
+                          className="w-10 h-10 md:w-16 md:h-16 text-purple-400"
                         />
                         <a
                           href={slide.links}
@@ -154,6 +165,7 @@ export default function Projects() {
                         >
                           <FaGithub
                             className="
+                            text-black
       rounded-full
       h-6 w-6 md:h-12 md:w-12 mt-1  hover:animate-ping bg-white"
                           />
@@ -167,7 +179,7 @@ export default function Projects() {
                         </a>
                         <FaArrowAltCircleRight
                           onClick={nextSlide}
-                          className="w-10 h-10 md:w-16 md:h-16 "
+                          className="w-10 h-10 md:w-16 md:h-16 text-purple-400 "
                         />
                       </div>
                     </div>

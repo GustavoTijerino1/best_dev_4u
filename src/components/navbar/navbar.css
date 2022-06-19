@@ -5,8 +5,7 @@ nav:hover li {
   
   nav li:hover {
     opacity: 1;
-    color: skyblue
-
+    color: rgb(248, 98, 248);
   }
   @layer{
 
@@ -15,4 +14,9 @@ nav:hover li {
       background-image: url('https://images.unsplash.com/photo-1590907047706-ee9c08cf3189?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80' ) ;
      @apply bg-cover bg-center h-full w-full
     }
+  }
+
+  .name-hover:hover {
+    color: rgb(248, 98, 248);
+    text-decoration: underline;
   }

@@ -13,12 +13,12 @@ export default function Homepage() {
       <section className="flex justify-center h-auto md:h-screen p-20 mt-10">
         <div className=" mt-6 p-8 text-center text-lg uppercase md:text-3xl text-white">
           <div className="flex">
-            <BiPlanet className="animate-spin text-white " />
+            <BiPlanet className="text-white " />
           </div>
           <h2 className="h-tag">Hello World,</h2>
           <p>My name is Gustavo and I love to code!!!</p>
-          <div className="flex justify-end">
-            <BiPlanet className="animate-spin text-white " />
+          <div className="flex justify-end mt-8">
+            <BiPlanet className="text-white " />
           </div>
         </div>
       </section>

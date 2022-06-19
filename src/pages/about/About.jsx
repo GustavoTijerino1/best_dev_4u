@@ -6,12 +6,13 @@ import {
   FaJs,
   FaHtml5,
   FaCss3Alt,
-  FaNode,
+  FaNodeJs,
   FaSass,
 } from "react-icons/fa";
 import { SiMongodb, SiMysql, SiTailwindcss } from "react-icons/si";
 
 export default function About() {
+  const gustavo = require("../../assets/img/me.jpg");
   return (
     <div className="boy">
       <Navbar></Navbar>
@@ -21,12 +22,12 @@ export default function About() {
       <div className=" flex justify-center  flex-col space-y-4 items-center p-20">
         <div className="  rounded-full h-60 w-60 overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1608237652484-b478fac3bf7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
-            alt=""
+            src={gustavo}
+            alt="Gustavo Tijerino"
             className="object-cover h-full w-full"
           />
         </div>
-        <div className="w-fit border-2 text-white border-blue-500 p-10 text-justify">
+        <div className="text-white p-6 text-justify bg-purple-400">
           <p className="mb-2 text-sm">
             As a Full-Stack Developer, I aspire nothing less than excellence and
             consistency. I am capable of delivering thoughtful, innovative
@@ -35,8 +36,8 @@ export default function About() {
             friends.
           </p>
         </div>
-        <h2 className="text-white border-2">Technologies/Skills</h2>
-        <div className="flex-row flex w-fit border-2 border-blue-500 p-6 flex-wrap  justify-between  space-x-4 ">
+        <h2 className="text-white underline">Technologies/Skills</h2>
+        <div className="flex-row flex p-6   justify-between  space-x-4  ">
           <a
             href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
             target="_blank"
@@ -44,7 +45,7 @@ export default function About() {
           >
             <FaJs
               className="icon
-            hover:animate-pulse text-yellow-300 bg-black mb-2 "
+            hover:animate-pulse text-yellow-300 bg-black "
             />
           </a>
           <a
@@ -79,7 +80,7 @@ export default function About() {
             />
           </a>
           <a
-            href="https://reactjs.org/docs/getting-started.htm"
+            href="https://reactjs.org/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -116,7 +117,7 @@ export default function About() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaNode
+            <FaNodeJs
               className="icon
               hover:animate-pulse
             text-green-500 bg-black"

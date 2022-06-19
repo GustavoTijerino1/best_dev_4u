@@ -10,24 +10,30 @@ export default function Resume() {
       <Sidecontactbar />
       <Link to="/contact">
         <button
-          className="fixed border-2 p-2 rounded-full hover:bg-blue-600 hover:underline bottom-60 right-0 mr-2  
+          className="fixed border-2 p-2 rounded-full hover:bg-blue-600 hover:underline 
+          bg-red-500
+          hover:animate-bounce 
+          hover:bg-green-600
+          hover:text-white
+          
+          bottom-60 right-0 mr-2  
         text-sm md:text-base "
         >
           Lets Talk!
         </button>
       </Link>
       <div className="h-screen md:h-full flex justify-center  flex-col space-y-2 items-center p-4">
-        <div className="border-2 p-2 rounded-full">
+        <div className="border-2 p-2 rounded-full bg-purple-200 hover:bg-purple-700 hover:text-white">
           <a
             className="hover:underline"
             rel="noreferrer"
             href="  https://docs.google.com/document/d/1tLv9REAxBM-w8b7GNel2XYWGM7Pbz-Z2jMlXjFFQlys/export?format=pdf"
             download
           >
-            <button className="text-sm md:text-base">Download Resume</button>
+            <button className="text-sm md:text-base ">Download Resume</button>
           </a>
         </div>
-        <div className=" border-2 border-blue-500 p-10 text-justify">
+        <div className="  p-10 text-justify">
           <img
             src="https://cdn.discordapp.com/attachments/948081994720505896/987210735824298014/unknown.png"
             className="w-fit"
@@ -36,9 +42,10 @@ export default function Resume() {
         </div>
 
         <button
-          className="hover:animate-pulse 
-          border-2 p-2 rounded-full hover:bg-blue-600 hover:underline
-          text-sm md:text-base"
+          className="hover:animate-bounce 
+          border-2 p-2 rounded-full hover:text-white hover:underline
+          text-sm md:text-base
+          bg-purple-200 hover:bg-purple-700"
         >
           <a
             className=""
