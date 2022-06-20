@@ -166,8 +166,8 @@ export default function Projects() {
                           <FaGithub
                             className="
                             text-black
-      rounded-full
-      h-6 w-6 md:h-12 md:w-12 mt-1  hover:animate-ping bg-white"
+                            rounded-full
+                            h-6 w-6 md:h-12 md:w-12 mt-1  hover:animate-ping bg-white"
                           />
                         </a>
                         <a

@@ -18,7 +18,7 @@ This is my portfolio to showcase my skills and knowledge of web development. I u
 
 ## Links
 
-[Live Page](https://gustavotijerino1.github.io/react_portfolio/)
+[Live Page](https://courageous-dieffenbachia-b433fd.netlify.app/)
 
 [Github Pages](https://github.com/GustavoTijerino1/best_dev_4u/)
 
