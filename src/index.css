@@ -3,22 +3,9 @@
 @tailwind utilities;
 
 *{
-
+font-family:'Times New Roman', Times, serif
 }
 
-/* .h-tag::before {
- 
-
-content: '<h1>';
-        font-family: 'La Belle Aurore', cursive;
-        color: #00ff7f;
-        font-size: 18px;
-        position: relative;
-        margin-top: -40px;
-        top: -40px;
-        left:0;
-        opacity: 0.9;
-} */
 
 
 
@@ -33,7 +20,7 @@ content: '<h1>';
 
   @layer{
 
-    .home-body {
+    .home-bg {
       
       background-image: url('  https://images.unsplash.com/photo-1506443432602-ac2fcd6f54e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80' ) ;
      @apply bg-cover bg-center h-screen md:h-full
@@ -54,7 +41,7 @@ content: '<h1>';
     .resume-bg {
       
       background-image: url('  https://images.unsplash.com/photo-1620820871314-4e0f0fd1eaf8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80' ) ;
-     @apply bg-cover bg-center h-auto  md:h-full 
+     @apply bg-cover bg-center h-screen  md:h-full 
     }
   }
 
@@ -64,5 +51,14 @@ content: '<h1>';
       
       background-image: url(' https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=611&q=80' ) ;
      @apply bg-cover bg-center md:h-full  h-screen
+    }
+  }
+
+  @layer{
+
+    .about-bg {
+      
+      background-image: url('https://images.unsplash.com/photo-1590907047706-ee9c08cf3189?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80' ) ;
+     @apply bg-cover bg-center h-screen md:h-full
     }
   }

@@ -14,19 +14,19 @@ import { SiMongodb, SiMysql, SiTailwindcss } from "react-icons/si";
 export default function About() {
   const gustavo = require("../../assets/img/me.jpg");
   return (
-    <div className="boy">
+    <div className="about-bg">
       <Navbar></Navbar>
 
       <Sidecontactbar />
 
-      <div className=" flex justify-center  flex-col space-y-4 items-center p-20">
-        <div className="  rounded-full h-60 w-60 overflow-hidden">
+      <div className=" flex justify-center  flex-col space-y-4 items-center p-20 h-auto ">
+        <figure className="  rounded-full h-60 w-60 overflow-hidden">
           <img
             src={gustavo}
             alt="Gustavo Tijerino"
             className="object-cover h-full w-full"
           />
-        </div>
+        </figure>
         <div className="text-white p-6 text-justify bg-purple-400">
           <p className="mb-2 text-sm">
             As a Full-Stack Developer, I aspire nothing less than excellence and

@@ -24,7 +24,7 @@ export default function Navbar() {
         "
     >
       <div className="flex space-x-2 ">
-        <FaReact className="h-10 w-10 animate-spin hover:animate-ping" />
+        <FaReact className="h-auto md:h-8 w-auto md:w-8 animate-spin hover:animate-ping" />
         <a href="/">
           <h1 className="text-2xl font-bold   name-hover   hidden md:block">
             ⌈G⌋ustavo ⌊T⌉ijerino
@@ -34,7 +34,7 @@ export default function Navbar() {
 
       <div className="flex justify-center ">
         <a href="/">
-          <h1 className="text-3xl  name-hover text-center  delay-75  md:hidden">
+          <h1 className="text-xl name-hover text-center  delay-75  md:hidden">
             ⌈G⌋ ⌊T⌉
           </h1>
         </a>

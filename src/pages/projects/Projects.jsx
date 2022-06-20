@@ -126,7 +126,7 @@ export default function Projects() {
                 animate__animated 
                 animate__fadeIn
                 flex flex-col space-y-2
-                h-auto md:h-full 
+                h-auto 
                 text-white
                "
                 >

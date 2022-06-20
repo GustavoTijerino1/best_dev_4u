@@ -1,116 +1,144 @@
-// import React, { useRef } from "react";
-// import emailjs from "@emailjs/browser";
-// import { Link } from "react-router-dom";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import "animate.css";
 import Navbar from "../../components/navbar/Navbar";
 import { GiRocketFlight } from "react-icons/gi";
 
 export default function Contact() {
-  //     const form = useRef();
+  const form = useRef();
 
-  //   const [userFormData, setUserFormData] = useState({
-  //     name: "",
-  //     email: "",
-  //     message: "",
-  //   });
+  const handleTextAreaKeyDown = (e) => {
+    if (e.code === "Enter") {
+      sendEmail(e);
+    }
+    console.log(e);
+  };
 
-  //   const [showAlert, setShowAlert] = useState(false);
+  const [userFormData, setUserFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-  //   const handleInputChange = (event) => {
-  //     const { name, value } = event.target;
-  //     setUserFormData({ ...userFormData, [name]: value });
-  //   };
+  const [showAlert, setShowAlert] = useState(false);
 
-  //   const sendEmail = (e) => {
-  //     e.preventDefault();
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setUserFormData({ ...userFormData, [name]: value });
+  };
 
-  //     emailjs
-  //     .sendForm(
-  //       'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY'
-  //     )
-  //     .then(
-  //       () => {
-  //         window.location.reload(false);
-  //         setShowAlert(true);
-  //       },
-  //       () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  //       }
-  //     );
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_KEY,
+        process.env.REACT_APP_TEMPLATE_KEY,
+        form.current,
+        process.env.REACT_APP_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          window.location.reload(false);
+          setShowAlert(true);
+        },
+        () => {}
+      );
+  };
   return (
     <div className="contact-bg">
-      <Navbar></Navbar>
+      <Navbar />
       <div
         className="flex justify-center p-20 
       
-     border-2 border-rose-500"
+     "
       >
         <div
           className="flex 
-        
-        md:justify-end border-2 border-rose-500
+        flex-col
+        md:justify-end 
         bg-stone-800 mt-10 p-20 w-fit justify-center"
         >
+          <p className="mb-4 text-white uppercase">
+            Email me, so we can
+            <span className="underline text-purple-500"> work together </span>
+            and build out of this world projects!!
+          </p>
+
           <form
             className="flex-wrap 
-            space-y-2 flex-col text-white"
+           space-y-2 flex-col text-black"
+            ref={form}
+            onSubmit={sendEmail}
           >
-            {/* {showAlert && ( */}
-            <div className="">
-              <h1>Email me!!</h1>
-              <p className="">
-                Let us work together and build out of this world projects!!
-              </p>
-              <span className="flex justify-end">
-                <GiRocketFlight className="h-8 w-8" />
-              </span>
-            </div>
-            <div className="">
+            {showAlert && (
+              <div className="flex justify-center mt-4 ">
+                <h3
+                  className="border-2  bg-green-600 text-white w-fit p-4 rounded animate__animated 
+                animate__zoomIn"
+                >
+                  Message sent!
+                </h3>
+              </div>
+            )}
+            <div className="form-row">
               <input
-                className="rounded p-2"
+                className="rounded w-full p-2"
                 placeholder="Name"
                 type="text"
                 name="name"
                 required
-                //   onChange={handleInputChange}
+                onChange={handleInputChange}
               />
             </div>
 
             <div>
               <input
-                className="rounded p-2"
+                className="rounded w-full p-2"
                 name="email"
                 type="email"
                 placeholder="Email"
-                //   onChange={handleInputChange}
-                //   value={userFormData.email}
+                onChange={handleInputChange}
+                value={userFormData.email}
                 required
               />
             </div>
 
             <textarea
-              className="resize-none md:resize
-              rounded p-2"
+              type="text"
+              className="
+              pt-0
+              pl-0
+              w-full
+              pb-20
+          
+             rounded "
               placeholder="Message..."
               name="message"
               required
-
-              // onChange={handleInputChange}
+              onKeyDown={handleTextAreaKeyDown}
+              onChange={handleInputChange}
             />
-
-            <button
-              type="submit"
-              // disabled={
-              //   !(userFormData.name && userFormData.email && userFormData.message)
-              // }
-            >
-              Submit
-            </button>
-          </form>
-          {/* <Link to="/">
-            <div className="span-border">
-              <span className="span-link">Back To Home</span>
+            <div className="flex justify-center">
+              <button
+                className="bg-purple-500 p-2 rounded mt-2 border-2 hover:border-white border-purple-500 p-2 rounded-full hover:text-white hover:underline
+              text-xs md:text-base
+              bg-purple-200 hover:bg-purple-700 border-black
+              flex flex-row"
+                type="submit"
+                disabled={
+                  !(
+                    userFormData.name &&
+                    userFormData.email &&
+                    userFormData.message
+                  )
+                }
+              >
+                Submit
+                <GiRocketFlight className="h-8 w-8" />
+              </button>
             </div>
-          </Link> */}
+          </form>
         </div>
       </div>
     </div>
