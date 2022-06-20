@@ -49,25 +49,28 @@ export default function Contact() {
     <div className="contact-bg">
       <Navbar />
       <div
-        className="flex justify-center p-20 
+        className=" p-20 
       
      "
       >
         <div
           className="flex 
+         
         flex-col
-        md:justify-end 
-        bg-stone-800 mt-10 p-20 w-fit justify-center"
+          p-12
+       text-xs md:text-base
+        bg-gradient-to-br from-purple-800 to-grey-500 mt-10  w-fit justify-center"
         >
           <p className="mb-4 text-white uppercase">
             Email me, so we can
-            <span className="underline text-purple-500"> work together </span>
+            <span className="underline text-purple-400"> work together </span>
             and build out of this world projects!!
           </p>
 
           <form
-            className="flex-wrap 
-           space-y-2 flex-col text-black"
+            className="
+            w-auto
+           space-y-2 "
             ref={form}
             onSubmit={sendEmail}
           >
@@ -121,9 +124,11 @@ export default function Contact() {
             />
             <div className="flex justify-center">
               <button
-                className="bg-purple-500 p-2 rounded mt-2 border-2 hover:border-white border-purple-500 p-2 rounded-full hover:text-white hover:underline
+                className=" p-2 rounded mt-2 border-2 hover:border-white border-purple-500 p-2 rounded-full hover:text-white hover:underline
               text-xs md:text-base
               bg-purple-200 hover:bg-purple-700 border-black
+              w-auto
+              
               flex flex-row"
                 type="submit"
                 disabled={

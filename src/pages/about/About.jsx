@@ -27,10 +27,10 @@ export default function About() {
             className="object-cover h-full w-full"
           />
         </figure>
-        <div className="text-white p-6 text-justify bg-purple-400">
-          <p className="mb-2 text-sm">
+        <div className="text-white p-6 text-left bg-purple-400 w-80">
+          <p className="mb-2 text-sm md:text-lg ">
             As a Full-Stack Developer, I aspire nothing less than excellence and
-            consistency. I am capable of delivering thoughtful, innovative
+            consistency. I'm capable of delivering thoughtful, innovative
             solutions to clients and customers needs. Other than coding I love
             watching anime, playing games and going to music festivals with
             friends.

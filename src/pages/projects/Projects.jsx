@@ -77,8 +77,7 @@ export default function Projects() {
       site: "https://techitout-deploy.herokuapp.com/",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1503387837-b154d5074bd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
+      image: require("../../assets/img/MyPortfolio.png"),
       title: "My Portfolio",
       info: "This is my portfolio that shows my skills and projects that I made.",
       links: " https://github.com/GustavoTijerino1/best_dev_4u",
@@ -92,6 +91,7 @@ export default function Projects() {
           />
         </div>
       ),
+      site: "https://courageous-dieffenbachia-b433fd.netlify.app/",
     },
     {
       image:

@@ -55,32 +55,32 @@ export default function Navbar() {
                                 right-0
                                 mt-4
                                 bg-white 
-                                rounded-lg py-2 shadow-2xl"
+                                rounded-lg py-2 "
           >
             <Link
               to="/"
               className="block px-4 py-2 text-gray-800
-                                    hover:bg-blue-500"
+                                    hover:text-white hover:bg-purple-500"
             >
               Home
             </Link>
             <Link
               to="/about"
               className="block 
-                                    px-4 py-2 text-gray-800 hover:bg-blue-500"
+                                    px-4 py-2 text-gray-800 hover:text-white hover:bg-purple-500"
             >
               About
             </Link>
             <Link
               to="/projects"
-              className="block px-4 py-2 text-gray-800 hover:bg-blue-500"
+              className="block px-4 py-2 text-gray-800 hover:text-white hover:bg-purple-500 "
             >
               Projects
             </Link>
 
             <Link
               to="/resume"
-              className="block px-4 py-2 text-gray-800 hover:bg-blue-500"
+              className="block px-4 py-2 text-gray-800 hover:text-white hover:bg-purple-500"
             >
               Resume
             </Link>
