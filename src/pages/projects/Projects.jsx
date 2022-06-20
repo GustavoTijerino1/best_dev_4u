@@ -133,16 +133,21 @@ export default function Projects() {
                   <h1 className="text-center md:text-3xl text-xl ">
                     {slide.title}
                   </h1>
-                  <img
-                    src={slide.image}
-                    alt="Project Screenshot"
-                    className="
-  
-                     h-full w-full"
-                  />
+                  <div className="overflow-hidden flex justify-center ">
+                    <img
+                      src={slide.image}
+                      alt="Project Screenshot"
+                      className="
+                      object-cover
+                      h-fit  w-4/5"
+                    />
+                  </div>
 
                   <div className=" flex flex-col  items-center   ">
-                    <p className="text-justify p-2 text-xs md:text-base bg-purple-400">
+                    <p
+                      className="text-left p-2 text-xs md:text-base bg-purple-400 
+                    w-96"
+                    >
                       {slide.info}
                     </p>
                     <div className="flex flex-col  items-center ">

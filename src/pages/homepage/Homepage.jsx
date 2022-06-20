@@ -10,18 +10,22 @@ export default function Homepage() {
 
       <Sidecontactbar />
 
-      <section className="flex justify-center h-auto md:h-screen p-20 ">
-        <div className=" mt-20 md:mt-10 p-8 text-center text-lg uppercase md:text-3xl text-white">
-          <BiPlanet className="text-white mb-6" />
-          <div className="flex justify-center flex-col items-center space-y-2 text-white">
-            <h2 className=" w-fit bg-gradient-to-br from-purple-800 to-grey-500">
+      <section className="flex justify-center h-screen p-10 ">
+        <div className="  md:mt-20 mt-20 p-8 text-center text-lg uppercase md:text-3xl text-white">
+          <BiPlanet className="text-white " />
+          <div
+            className="flex justify-center flex-col 
+         
+          items-center space-y-2 text-white"
+          >
+            <h2 className=" w-fit bg-gradient-to-br from-purple-800 to-grey-500 rounded">
               Hello World,
             </h2>
-            <p className=" w-80 bg-gradient-to-br from-purple-800 to-grey-500 ">
+            <p className=" w-80 bg-gradient-to-br from-purple-800 to-grey-500 rounded ">
               My name is Gustavo and I love to code!!!
             </p>
           </div>
-          <div className="flex justify-end mt-8">
+          <div className="flex justify-end mt-6 ">
             <BiPlanet className="text-white " />
           </div>
         </div>
