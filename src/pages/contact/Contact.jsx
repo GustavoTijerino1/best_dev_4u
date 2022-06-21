@@ -72,6 +72,7 @@ export default function Contact() {
                     className="border-2  bg-green-600 text-white w-fit p-4 rounded animate__animated 
                 animate__zoomIn"
                   >
+                    {/* test */}
                     Message sent!
                   </h3>
                 </div>
