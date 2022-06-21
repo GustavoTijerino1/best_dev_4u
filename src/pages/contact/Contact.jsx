@@ -29,8 +29,21 @@ export default function Contact() {
     });
   };
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
+    const { name, email, message } = userFormData;
+
+    const res = await fetch("http://localhost:3001/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        message,
+      }),
+    });
 
     emailjs
       .sendForm(
@@ -66,10 +79,10 @@ export default function Contact() {
             </p>
 
             <form
-              className="
-
-            
-           space-y-2 "
+              className="space-y-2"
+              method="POST"
+              data-netlify="true"
+              action="/contact"
               ref={form}
               onSubmit={sendEmail}
             >
