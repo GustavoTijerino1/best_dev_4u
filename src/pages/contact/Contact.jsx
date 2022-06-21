@@ -33,7 +33,7 @@ export default function Contact() {
     e.preventDefault();
     const { name, email, message } = userFormData;
 
-    await fetch("/", {
+    await fetch("https://courageous-dieffenbachia-b433fd.netlify.app/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
