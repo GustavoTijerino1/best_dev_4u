@@ -7,11 +7,11 @@ import { GiRocketFlight } from "react-icons/gi";
 export default function Contact() {
   const form = useRef();
 
-  const handleTextAreaKeyDown = (e) => {
-    if (e.code === "Enter") {
-      sendEmail(e);
-    }
-  };
+  // const handleTextAreaKeyDown = (e) => {
+  //   if (e.code === "Enter") {
+  //     sendEmail(e);
+  //   }
+  // };
 
   const [userFormData, setUserFormData] = useState({
     name: "",
@@ -23,7 +23,10 @@ export default function Contact() {
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
-    setUserFormData({ ...userFormData, [name]: value });
+    setUserFormData({
+      ...userFormData,
+      [name]: value,
+    });
   };
 
   const sendEmail = (e) => {
@@ -47,19 +50,14 @@ export default function Contact() {
   return (
     <div className="contact-bg">
       <Navbar />
-      <div
-        className=" p-20 
-      
-     "
-      >
+      <div className="p-20">
         <div className="flex justify-center">
           <div
             className="flex 
-         
-        flex-col
-          p-12
-       text-xs md:text-base
-        bg-gradient-to-br from-purple-800 to-grey-500 mt-10  w-fit justify-center"
+            flex-col
+            p-12
+          text-xs md:text-base
+            bg-gradient-to-br from-purple-800 to-grey-500 mt-10  w-fit justify-center"
           >
             <p className="mb-4 text-white uppercase">
               Email me, so we can
@@ -85,28 +83,30 @@ export default function Contact() {
                   </h3>
                 </div>
               )}
-              <div className="form-row">
-                <input
-                  className="rounded w-full p-2"
-                  placeholder="Name"
-                  type="text"
-                  name="name"
-                  required
-                  onChange={handleInputChange}
-                />
-              </div>
-
-              <div>
-                <input
-                  className="rounded w-full p-2"
-                  name="email"
-                  type="email"
-                  placeholder="Email"
-                  onChange={handleInputChange}
-                  value={userFormData.email}
-                  required
-                />
-              </div>
+              <input
+                className="rounded w-full p-2"
+                placeholder="Name"
+                type="text"
+                name="name"
+                required
+                onChange={handleInputChange}
+              />
+              <input
+                className="rounded w-full p-2"
+                name="email"
+                type="email"
+                placeholder="Email"
+                onChange={handleInputChange}
+                value={userFormData.email}
+                required
+              />
+              <input
+                className="rounded w-full p-2"
+                placeholder="Subject"
+                type="text"
+                name="subject"
+                required
+              />
 
               <textarea
                 type="text"
@@ -114,13 +114,12 @@ export default function Contact() {
               pt-0
               pl-0
               w-full
-              pb-20
-          
-              rounded "
+              pb-20 
+              rounded"
                 placeholder="Message..."
                 name="message"
                 required
-                onKeyDown={handleTextAreaKeyDown}
+                // onKeyDown={handleTextAreaKeyDown}
                 onChange={handleInputChange}
               />
               <div className="flex justify-center">
