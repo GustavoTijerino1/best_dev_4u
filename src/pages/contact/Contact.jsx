@@ -29,21 +29,8 @@ export default function Contact() {
     });
   };
 
-  const sendEmail = async (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    const { name, email, message } = userFormData;
-
-    await fetch("https://courageous-dieffenbachia-b433fd.netlify.app/contact", {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        message,
-      }),
-    });
 
     emailjs
       .sendForm(
@@ -78,14 +65,7 @@ export default function Contact() {
               and build out of this world projects!!
             </p>
 
-            <form
-              className="space-y-2"
-              method="POST"
-              data-netlify="true"
-              // action="/contact"
-              ref={form}
-              onSubmit={sendEmail}
-            >
+            <form className="space-y-2 " ref={form} onSubmit={sendEmail}>
               {showAlert && (
                 <div className="flex justify-center mt-4 ">
                   <h3
