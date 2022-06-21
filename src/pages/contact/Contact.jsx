@@ -33,7 +33,7 @@ export default function Contact() {
     e.preventDefault();
     const { name, email, message } = userFormData;
 
-    const res = await fetch("http://localhost:3001/contact", {
+    await fetch("http://localhost:3001/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
