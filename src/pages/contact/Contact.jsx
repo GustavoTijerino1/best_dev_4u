@@ -34,7 +34,7 @@ export default function Contact() {
     const { name, email, message } = userFormData;
 
     await fetch("https://courageous-dieffenbachia-b433fd.netlify.app/contact", {
-      method: "POST",
+      method: "GET",
       headers: {
         "Content-Type": "application/json",
       },
@@ -82,7 +82,7 @@ export default function Contact() {
               className="space-y-2"
               method="POST"
               data-netlify="true"
-              action="/contact"
+              // action="/contact"
               ref={form}
               onSubmit={sendEmail}
             >
