@@ -1,9 +1,7 @@
 {
   "name": "best_dev_4u",
-  "version": "1.0.0",
- "engines": {
-   "node": "12.11.1"
-   },
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@headlessui/react": "^1.6.4",
