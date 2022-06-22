@@ -39,13 +39,10 @@ export default function Contact() {
         form.current,
         process.env.REACT_APP_PUBLIC_KEY
       )
-      .then(
-        () => {
-          window.location.reload();
-          setShowAlert(true);
-        },
-        () => {}
-      );
+      .then(() => {
+        window.location.reload();
+        setShowAlert(true);
+      });
   };
   return (
     <div className="contact-bg">
