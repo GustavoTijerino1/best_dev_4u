@@ -17,6 +17,7 @@ export default function Contact() {
     name: "",
     email: "",
     message: "",
+    subject: "",
   });
 
   const [showAlert, setShowAlert] = useState(false);
@@ -40,7 +41,12 @@ export default function Contact() {
         process.env.REACT_APP_PUBLIC_KEY
       )
       .then(() => {
-        // window.location.reload();
+        setUserFormData({
+          name: "",
+          email: "",
+          message: "",
+          subject: "",
+        });
         setShowAlert(true);
       });
   };
@@ -80,6 +86,7 @@ export default function Contact() {
                 type="text"
                 name="name"
                 required
+                value={userFormData.name}
                 onChange={handleInputChange}
               />
               <input
@@ -96,6 +103,8 @@ export default function Contact() {
                 placeholder="Subject"
                 type="text"
                 name="subject"
+                value={userFormData.subject}
+                onChange={handleInputChange}
                 required
               />
 
@@ -109,6 +118,7 @@ export default function Contact() {
               rounded"
                 placeholder="Message..."
                 name="message"
+                value={userFormData.message}
                 required
                 // onKeyDown={handleTextAreaKeyDown}
                 onChange={handleInputChange}
