@@ -40,7 +40,7 @@ export default function Contact() {
         process.env.REACT_APP_PUBLIC_KEY
       )
       .then(() => {
-        window.location.reload();
+        // window.location.reload();
         setShowAlert(true);
       });
   };
