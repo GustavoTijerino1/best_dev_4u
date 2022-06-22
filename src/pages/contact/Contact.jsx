@@ -41,7 +41,7 @@ export default function Contact() {
       )
       .then(
         () => {
-          window.location.reload(false);
+          window.location.reload();
           setShowAlert(true);
         },
         () => {}
@@ -118,11 +118,14 @@ export default function Contact() {
               />
               <div className="flex justify-center">
                 <button
-                  className=" p-2 rounded mt-2 border-2 hover:border-white border-purple-500 p-2 rounded-full hover:text-white hover:underline
+                  className=" p-2 rounded mt-2 border-2
+                   hover:border-white 
+                   border-purple-500 p-2 
+                   rounded-full 
+                   hover:text-white hover:underline
                 text-xs md:text-base
               bg-purple-200 hover:bg-purple-700 border-black
               w-auto
-              
               flex flex-row"
                   type="submit"
                   disabled={
